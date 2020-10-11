@@ -45,6 +45,10 @@ int InversionNumber(int* Arr) {
 }
 void Print(int* Arr) {
 	for (int i = 1; i < SIZE; i++) {
+		std::cout << i << " ";
+	}
+	std::cout << "\n";
+	for (int i = 1; i < SIZE; i++) {
 		std::cout << Arr[i]<<" ";
 	}
 	std::cout << "\n";
@@ -54,10 +58,6 @@ int main() {
 	int* Arr22 = PowS(Arr2, b);
 	int* Arr33 = PowS(Arr3, c);
 	int* Arr44 = PowS(Arr4, e);
-	Print(Arr11);
-	Print(Arr22);
-	Print(Arr33);
-	Print(Arr44);
 	int* Ans = PrS(PrS(PrS(Arr11, Arr22), Arr33), Arr44);
 	Print(Ans);
 	if (InversionNumber(Ans) % 2 == 1) {
