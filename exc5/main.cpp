@@ -67,7 +67,7 @@ int main() {
 		std::cout << "Chetno\n";
 	}
 	int* Arr5 = Ans;
-	int i = 1;
+	int i = 0;
 	while (IsE(Arr5)!=true) {
 		Arr5=PrS(Arr5, Ans);
 		i++;
